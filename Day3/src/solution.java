@@ -1,4 +1,5 @@
 public class solution {
+
     public int maxProfit(int[] prices) {
         int min=prices[0],max = prices[0],profits=0;
 
