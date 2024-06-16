@@ -1,0 +1,12 @@
+select c,count(a),sum(b) from t group by c;  是一个常用的sql，编程计算这个sql的运行结果
+int[][] calSql(int[][] t,int a, int b, int c)
+输入说明：输入参数t为一个二维数组，代表一个数据表，保证数组里面的所有数字都在0~10之间，行数在100之内，列数在30之内。输入参数a为进行count的列，b为进行sum计算的列，c为进行group by的列。
+Select c,from t group by c
+样例：
+输入数据
+int[][] t = new int[][]{{1,2,3},{4,5,6},{7,8,3}};
+a = 1
+b = 2
+c = 3
+输出
+new int[][]{{3,2,10},{6,1,5}}
