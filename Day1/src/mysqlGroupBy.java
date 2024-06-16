@@ -5,11 +5,9 @@ public class mysqlGroupBy {
         Map<Integer,int[]> group = new HashMap<>();
         for(int[] row : t){
             int groupKey = row[c-1];
-
             if(!group.containsKey(groupKey)){
                 group.put(row[c-1],new int[]{0,0});
             }
-
             int[] countAndSum = group.get(groupKey);
             countAndSum[0]++;
             countAndSum[1]+=row[b-1];
